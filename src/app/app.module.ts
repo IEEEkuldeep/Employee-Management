@@ -12,6 +12,15 @@ import { CompnayInfoComponent } from './compnay-info/compnay-info.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { FormsModule } from '@angular/forms';
+import { EditDetailsComponent } from './edit-details/edit-details.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { MaterialModule } from './material/material.module';
+import { RouterModule } from '@angular/router';
+
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
+// import {MatInputModule} from '@angular/material/input';
+// import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -21,7 +30,9 @@ import { FormsModule } from '@angular/forms';
     SubHeaderComponent,
     CompnayInfoComponent,
     AddEmployeeComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    EditDetailsComponent,
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +41,12 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     MatButtonModule,
     FormsModule,
+    MaterialModule,
+    RouterModule,
+    MatDialogModule,
+    MatSelectModule,
+    // MatInputModule,
+    // MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
